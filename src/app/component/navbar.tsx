@@ -3,7 +3,7 @@ import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { NavigationMenuDemo } from "./navbarLink";
 import Image from "next/image";
-import logo from "../../../public/pictures/Logo.webp";
+import logo from "../../../public/pictures/logo.png";
 const Navbar = () => {
   return (
     <div>

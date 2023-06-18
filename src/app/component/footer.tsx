@@ -1,103 +1,125 @@
 import React from "react";
-
+import logo from "../../../public/pictures/logo.png";
+import Image from "next/image";
+import Link from "next/link";
 const Footer = () => {
   return (
     <div>
       <footer className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto">
+        <div className="container px-5 py-5 mx-auto">
           <div className="flex flex-wrap md:text-left text-center order-first">
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-                CATEGORIES
+              <h2 className="scroll-m-20 text-lg font-semibold tracking-tight mb-3">
+                COMPNAY
               </h2>
               <nav className="list-none mb-10">
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">
-                    First Link
-                  </a>
+                  <Link
+                    href={"/"}
+                    className="text-base font-semibold tracking-tight text-myblackpara hover:text-myblackpara/70"
+                  >
+                    Home
+                  </Link>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">
-                    Second Link
-                  </a>
+                  <Link
+                    href={"/"}
+                    className="text-base font-semibold tracking-tight text-myblackpara hover:text-myblackpara/70"
+                  >
+                    Abous Us
+                  </Link>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">
-                    Third Link
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800">
-                    Fourth Link
-                  </a>
+                  <Link
+                    href={"/"}
+                    className="text-base font-semibold tracking-tight text-myblackpara hover:text-myblackpara/70"
+                  >
+                    Contact Us
+                  </Link>
                 </li>
               </nav>
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-                CATEGORIES
+              <h2 className="scroll-m-20 text-lg font-semibold tracking-tight mb-3">
+                SERVICES
               </h2>
               <nav className="list-none mb-10">
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">
-                    First Link
-                  </a>
+                  <Link
+                    href={"/"}
+                    className="text-base font-semibold tracking-tight text-myblackpara hover:text-myblackpara/70"
+                  >
+                    Branding
+                  </Link>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">
-                    Second Link
-                  </a>
+                  <Link
+                    href={"/"}
+                    className="text-base font-semibold tracking-tight text-myblackpara hover:text-myblackpara/70"
+                  >
+                    Design
+                  </Link>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">
-                    Third Link
-                  </a>
+                  <Link
+                    href={"/"}
+                    className="text-base font-semibold tracking-tight text-myblackpara hover:text-myblackpara/70"
+                  >
+                    Marketing
+                  </Link>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">
-                    Fourth Link
-                  </a>
+                  <Link
+                    href={"/"}
+                    className="text-base font-semibold tracking-tight text-myblackpara hover:text-myblackpara/70"
+                  >
+                    Advertisement
+                  </Link>
                 </li>
               </nav>
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-                CATEGORIES
+              <h2 className="scroll-m-20 text-lg font-semibold tracking-tight mb-3">
+                LEGAL
               </h2>
               <nav className="list-none mb-10">
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">
-                    First Link
-                  </a>
+                  <Link
+                    href={"/"}
+                    className="text-base font-semibold tracking-tight text-myblackpara hover:text-myblackpara/70"
+                  >
+                    Terms of use
+                  </Link>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">
-                    Second Link
-                  </a>
+                  <Link
+                    href={"/"}
+                    className="text-base font-semibold tracking-tight text-myblackpara hover:text-myblackpara/70"
+                  >
+                    Privacy policy
+                  </Link>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">
-                    Third Link
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800">
-                    Fourth Link
-                  </a>
+                  <Link
+                    href={"/"}
+                    className="text-base font-semibold tracking-tight text-myblackpara hover:text-myblackpara/70"
+                  >
+                    Cookie policy
+                  </Link>
                 </li>
               </nav>
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+              <h2 className="scroll-m-20 text-lg font-semibold tracking-tight mb-3">
                 SUBSCRIBE
               </h2>
               <div className="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
                 <div className="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
                   <label
                     htmlFor="footer-field"
-                    className="leading-7 text-sm text-gray-600"
+                    className="leading-7 text-xs font-semibold text-gray-600"
                   >
-                    Placeholder
+                    Enter your email
                   </label>
                   <input
                     type="text"
@@ -106,44 +128,39 @@ const Footer = () => {
                     className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-green-200 focus:border-green-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>
-                <button className="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded">
-                  Button
+                <button className="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-green-500 border-0 py-2 px-4 focus:outline-none hover:bg-green-600 rounded">
+                  NOTIFIED
                 </button>
               </div>
-              <p className="text-gray-500 text-sm mt-2 md:text-left text-center">
-                Bitters chicharrones fanny pack
+              <p className="text-gray-500 text-xs mt-2 font-semibold md:text-left text-center">
+                Please provide us your email
                 <br className="lg:block hidden" />
-                waistcoat green juice
+                to get notified for exciting promos
               </p>
             </div>
           </div>
         </div>
-        <div className="bg-gray-100">
+        <div>
           <div className="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
             <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                className="w-10 h-10 text-white p-2 bg-green-500 rounded-full"
-                viewBox="0 0 24 24"
-              >
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-              </svg>
-              <span className="ml-3 text-xl">Tailblocks</span>
+              <Image
+                src={logo}
+                alt="logo"
+                width={100}
+                height={100}
+                className=""
+              />
+              <span className="ml-3 text-xl">ONLINE SHOPPING</span>
             </a>
             <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">
-              © 2020 Tailblocks —
+              © 2023 OFASHION —
               <a
-                href="https://twitter.com/knyttneve"
+                href="https://github.com/ahmadbilal2023"
                 rel="noopener noreferrer"
                 className="text-gray-600 ml-1"
                 target="_blank"
               >
-                @knyttneve
+                @github
               </a>
             </p>
             <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
