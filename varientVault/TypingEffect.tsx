@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function TypingEffect() {
-  const text = "OOnline Shopping Site";
+  const text = "OONLINE SHOPPING SITE";
   const [displayedText, setDisplayedText] = React.useState("");
 
   React.useEffect(() => {
