@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
 import BestSellingVarient from "../../../varientVault/BestSelling";
-import BestSellingCard from "./BestSellingCard";
+import BestSellingCard from "../component/BestSellingCard";
 
-const BestSelling = () => {
+const Category = () => {
   const bestSell = [
     {
       src: "/pictures/BS1.jpg",
@@ -11,8 +11,9 @@ const BestSelling = () => {
       title: "Red Printed T.Shirt",
       description: "Best quality t.shirt for Women",
       price: 150,
-      category: "white T-shirt",
-      slug: "white tops",
+      category:"tops",
+      slug:"white top"
+      
     },
     {
       src: "/pictures/BS3.jpg",
@@ -20,8 +21,8 @@ const BestSelling = () => {
       title: "Red Printed T.Shirt",
       description: "Best quality t.shirt for Women",
       price: 200,
-      category: "Black T-shirt",
-      slug: "Black T-Shirt",
+      category:"tops",
+      slug:"black top"
     },
     {
       src: "/pictures/BS2.jpg",
@@ -29,20 +30,21 @@ const BestSelling = () => {
       title: "Black Pumpees",
       description: "Top Notch Shoes for Women",
       price: 250,
-      category: "Black Pumpees",
-      slug: "Black Shoes",
+      category:"tops",
+      slug:"white top"
     },
-  ];
+  ]
   return (
-    <div className="mb-28 mt-28">
-      {/* Heading */}
+    <div className="mt-[50px] mb-[100px]">
       <div className="text-center mb-10">
-        <BestSellingVarient key={0} />
+        <h1 className="text-myblackHead scroll-m-20 text-xl font-extrabold tracking-tight lg:text-2xl capitalize">
+          tops of women
+        </h1>
         <div className="flex mt-2 justify-center">
           <div className="w-28 h-1 rounded-full bg-myorange inline-flex" />
         </div>
       </div>
-      {/* Best selling product card here */}
+      {/* Category start here */}
       <div className="flex flex-wrap justify-center gap-5">
         {bestSell.map((items, i) => (
           <BestSellingCard
@@ -61,4 +63,4 @@ const BestSelling = () => {
   );
 };
 
-export default BestSelling;
+export default Category;

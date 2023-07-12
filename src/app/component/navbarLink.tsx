@@ -18,25 +18,25 @@ import {
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "Tops",
-    href: "#",
+    href: "/tops",
     description:
       "A Collection of beautiful tops for your wardrobe to sleek your look",
   },
   {
     title: "Pants",
-    href: "#",
+    href: "/pants",
     description:
       "A Collection of beautiful pants for your wardrobe to sleek your look",
   },
   {
     title: "Accessories/Jewelry",
-    href: "#",
+    href: "accessories",
     description:
       "A Collection of beautiful jewelry and accessories for your wardrobe to sleek your look",
   },
   {
     title: "Shoes",
-    href: "#",
+    href: "shoes",
     description:
       "A Collection of beautiful shoes for your wardrobe to sleek your look",
   },
@@ -56,24 +56,22 @@ export function NavigationMenuDemo() {
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-mywhite">
               {components.map((component) => (
-                <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
-                >
-                  {component.description}
-                </ListItem>
+                <Link key={component.title} href={component.href}>
+                  <ListItem title={component.title}>
+                    {component.description}
+                  </ListItem>
+                </Link>
               ))}
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="#" legacyBehavior passHref>
+          <Link href="/aboutUs" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               About
             </NavigationMenuLink>
           </Link>
-          <Link href="#" legacyBehavior passHref>
+          <Link href="/contact" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Contact
             </NavigationMenuLink>
@@ -99,7 +97,9 @@ const ListItem = React.forwardRef<
           )}
           {...props}
         >
-          <div className="text-sm font-medium leading-none group-hover:text-myorange">{title}</div>
+          <div className="text-sm font-medium leading-none group-hover:text-myorange">
+            {title}
+          </div>
           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground group-hover:text-myblackpara">
             {children}
           </p>
